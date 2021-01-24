@@ -145,7 +145,7 @@ class BackendUController extends BackendController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Requests\UserDestroyRequest $request, $id)
     {
         Post::where('author_id', $id)->update(['author_id' => config('cms.default_user_id')]);
         $user = user::findOrFail($id);

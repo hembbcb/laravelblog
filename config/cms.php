@@ -18,8 +18,8 @@ return [
                 'height' => 150
             ]
             ],
+            'default_user_id' => 1,
+            'default_category_id' => 1,
         
-        'default_category_id' => 1,
-        'default_user_id' => 1,
     
     ];
