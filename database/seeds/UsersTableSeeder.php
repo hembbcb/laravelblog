@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Faker\Factory;
+
 
 class UsersTableSeeder extends Seeder
 {
@@ -16,11 +16,6 @@ class UsersTableSeeder extends Seeder
         //reset the users table
     //    DB:: statement('SET FOREIGN_KEY_CHECKS=0');
         DB:: table('users')->delete();
-
-        //genretate users/author
-
-
-        $faker = Factory::create();
         
 
         DB::table('users')->insert([
