@@ -11,6 +11,43 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses'=> 'BlogController@index',
+    'as' => 'blog'
+]);
+
+Route::get('/blog/{post}', [
+    'uses' => 'BlogController@show',
+    'as' => 'blog.show'
+]);
+
+Route::get('/category/{category}', [
+    'uses' => 'BlogController@category',
+    'as' => 'category'
+]);
+
+Route::get('/tag/{tag}', [
+    'uses' => 'BlogController@tag',
+    'as' => 'tag'
+]);
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::put('/backend/blog/restore/{blog}', [
+    'uses' => 'BackendBController@restore',
+    'as'   =>  'backend.blog.restore'
+]);
+
+Route::delete('/backend/blog/delete/{blog}', [
+    'uses' => 'BackendBController@forceDestroy',
+    'as'   =>  'backend.blog.delete'
+]);
+
+
+Route::resource('/backend/blog', 'BackendBController', ['as'=> 'backend']);
+
+Route::resource('/backend/categories', 'BackendCController', ['as'=> 'backend']);
+
+Route::resource('/backend/users', 'BackendUController', ['as'=> 'backend']);

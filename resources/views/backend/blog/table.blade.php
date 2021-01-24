@@ -1,0 +1,45 @@
+<table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td width="80">Action</td>
+                        <td>Title</td>
+                        <td width="120">Author</td>
+                        <td width="150">Category</td>
+                        <td width="150">Date</td>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                @foreach( $posts as $post)
+                   <tr>
+                       <td>
+                                {!! Form::open(['method' => 'DELETE', 'route' =>['backend.blog.destroy',$post->id]])!!}
+
+                           <a href="{{ route('backend.blog.edit', $post->id)}}" class="btn btn-xs btn-default">
+                                        <i class="fa fa-pencil-square-o"></i>
+                            </a>
+
+
+                            <button type="submit" onclick="return confirm('Are you sure you want to move this post to trash ?')" class="btn btn-xs btn-danger">
+                                        <i class="fa fa-trash-o"></i>
+
+                            </button>
+
+                                {!! Form::close() !!}
+
+                       </td>
+                      
+                       <td> {{$post->title}}</td>
+                       <td>{{$post->author->name}}</td>
+                       <td>{{$post->category-> title}}</td>
+                       <td>
+                           <abbr title="{{$post->dateFormatted(true)}}">{{$post->dateFormatted()}}</abbr>
+                            {!! $post-> publicationLabel() !!}
+                       </td>
+                   </tr>
+
+                   @endforeach
+                </tbody>
+</table>

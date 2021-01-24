@@ -1,0 +1,15 @@
+.form-group-excerpt .CodeMirror{
+    height: 110px;
+    min-height: 110px;
+}
+.form-group-bio .CodeMirror{
+    height: 150px;
+    min-height: 150px;
+}
+
+
+.form-group-body .CodeMirror{
+    height:350px;
+    min-height: 350px;
+}
+
