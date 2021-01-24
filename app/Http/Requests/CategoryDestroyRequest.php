@@ -13,16 +13,9 @@ class CategoryDestroyRequest extends Request
      */
     public function authorize()
     {
-        return !$this->route('category') == config('cms.default_category_id');
+        return ! ($this->route('category') == config('cms.default_category_id'));
     }
-   
 
-
-
-    public function forbiddenResponse()
-    {
-        return redirect()->back()->with('error-message','Sorry, You cannot delete default category ! ' );
-    }
     /**
      * Get the validation rules that apply to the request.
      *

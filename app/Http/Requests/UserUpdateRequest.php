@@ -26,7 +26,7 @@ class UserUpdateRequest extends Request
         return [
             'name' => 'required',
             'bio' => 'required',
-            'email' => 'email|required|max: 255 | unique:users,email,' .$this-> route('users'),
+            'email' => 'email|required|max: 255 | unique:users,email,',
             'password' => 'required',
             'profile' => 'mimes:jpg,jpeg,bmp,png,gif',
         ];

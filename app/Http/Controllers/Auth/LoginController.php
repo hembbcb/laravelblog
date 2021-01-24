@@ -27,6 +27,20 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
+
+    /**
+     * Where to redirect users after logout.
+     *
+     * @var string
+     */
+    protected function logout(Request $request)
+     
+    {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        return $this->loggedOut($request) ?: redirect('/login');
+    
+    }
     /**
      * Create a new controller instance.
      *

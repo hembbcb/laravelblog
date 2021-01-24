@@ -13,13 +13,7 @@ class UserDestroyRequest extends Request
      */
     public function authorize()
     {
-        return !$this->route('user') == config('cms.default_user_id');
-    }
-
-
-    public function forbiddenResponse()
-    {
-        return redirect()->back()->with('error-message','Sorry, You cannot delete user a! ' );
+        return ! ($this->route('user') == config('cms.default_user_id'));
     }
 
     /**
