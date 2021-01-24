@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
+
 class UserDestroyRequest extends Request
 {
     /**
@@ -15,7 +16,7 @@ class UserDestroyRequest extends Request
     {
         return ! ($this->route('user') == config('cms.default_user_id'));
     }
-
+ 
     /**
      * Get the validation rules that apply to the request.
      *

@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
+
 class CategoryDestroyRequest extends Request
 {
     /**
@@ -15,7 +16,7 @@ class CategoryDestroyRequest extends Request
     {
         return ! ($this->route('category') == config('cms.default_category_id'));
     }
-
+  
     /**
      * Get the validation rules that apply to the request.
      *

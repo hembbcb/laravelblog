@@ -92,7 +92,6 @@ class BackendBController extends BackendController
             'excerpt' =>'required',
             'body' =>'required',
             'author_id' => 'required',
-            'published_at' => 'date_format: Y-m-d H:i:s',
             'image' => 'mimes:jpg,jpeg,bmp,png,gif',
         ]);
     
@@ -177,7 +176,6 @@ class BackendBController extends BackendController
             'excerpt' =>'required',
             'body' =>'required',
             'author_id' => 'required',
-            'published_at' => 'date_format: Y-m-d H:i:s',
             'image' => 'mimes:jpg,jpeg,bmp,png,gif',
         ]);
 

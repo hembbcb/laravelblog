@@ -26,7 +26,7 @@ class UserStoreRequest extends Request
         return [
             'name' => 'required',
             'bio' => 'required',
-            'email' => 'email|required|max: 255 | unique:users',
+            'email' => 'email|required| unique:users',
             'password' => 'required',
             'profile' => 'mimes:jpg,jpeg,bmp,png,gif',
         ];
