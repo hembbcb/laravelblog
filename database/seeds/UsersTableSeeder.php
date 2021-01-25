@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
             [
                 'name'=>'Administrator',
                 'email'=> 'geospatialbhutan@gmail.com',
-                'password'=> '$2y$10$w12P0XgycBGqv0rtIKcb5OlAEEYpOh7UCo6A4gKq8kXxB5hlPCBZu',
+                'password'=> '$2y$10$QxPMJGyeBt8nK.FeXfsb/ODIpLm9jrUea.v6Xun3IrM8ZEPRRB0Bi',
                 'bio' => 'Remote Sensing, Web Mapping, Geo-Data Management, Environmental Statistics',
                
             ],

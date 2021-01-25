@@ -25,6 +25,21 @@ Route::get('/blog/contact', [
     'as' => 'blog.contact'
 ]);
 
+Route::get('/app', [
+    'uses' => 'ApplicationController@index',
+    'as' => 'app'
+]);
+
+Route::get('/app/tis', [
+    'uses' => 'ApplicationController@tis',
+    'as' => 'apps.tis'
+]);
+
+Route::get('/app/geoportal',[
+    'uses' => 'ApplicationController@geoportal',
+    'as' => 'apps.geoportal'
+]);
+
 Route::get('/blog/{post}', [
     'uses' => 'BlogController@show',
     'as' => 'blog.show'
@@ -60,3 +75,6 @@ Route::resource('/backend/blog', 'BackendBController', ['as'=> 'backend']);
 Route::resource('/backend/categories', 'BackendCController', ['as'=> 'backend']);
 
 Route::resource('/backend/users', 'BackendUController', ['as'=> 'backend']);
+
+
+

@@ -34,7 +34,7 @@
                 <li><a href="{{route('blog')}}">Blog</a></li>
                 <li><a href="{{route('blog.about')}}">About</a></li>
                 <li><a href="{{route('blog.contact')}}">Contact</a></li>
-                <li><a href="#">Applications</a></li>
+                <li><a href="{{route('app')}}">Applications</a></li>
                 <li onclick="return confirm('Click Ok If You Own This Blog')"></i><a href="{{ url('/login') }}">Login</a></li>
               </ul>
             </div>
