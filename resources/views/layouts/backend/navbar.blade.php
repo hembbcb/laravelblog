@@ -34,7 +34,7 @@
              document.getElementById('logout-form').submit();">Logout </a>             
              
              
-             <form id="logout-form" action="{{ url('/logout') }}"  style="display:none">
+             <form id="logout-form" method='POST' action="{{ url('/logout') }}"  style="display:none">
              {{ csrf_field() }}
             
             </form>
