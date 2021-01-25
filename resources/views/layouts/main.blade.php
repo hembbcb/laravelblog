@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="backend/css/AdminLTE.css">
 </head>
 
 <header>
@@ -31,10 +32,11 @@
  
             <div class="collapse navbar-collapse" id="the-navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{{route('blog')}}">Blog</a></li>
+                <li><a href="{{route('blog')}}">Blog</a></li>
                 <li><a href="{{route('blog.about')}}">About</a></li>
                 <li><a href="{{route('blog.contact')}}">Contact</a></li>
-                <li><a href="#">Apps</a></li>
+                <li><a href="#">Applications</a></li>
+                <li onclick="return confirm('Click Ok If You Own This Blog')"></i><a href="{{ url('/login') }}">Login</a></li>
               </ul>
             </div>
           </div>

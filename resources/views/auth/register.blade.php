@@ -1,12 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
+<div class="register-box">
+            <div class="register-logo">
+                <a href=""><b>GEOSPATIAL </b> BHUTAN</a>
+                        </div>
+
+                
+                        <div class="register-box-body">
+                        <p class="register-box-msg">Register to start your session</p>
+
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
 
