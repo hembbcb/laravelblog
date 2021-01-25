@@ -1,6 +1,36 @@
 @extends('layouts.app')
 @section('content')
 
+<nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+           
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-navbar-collapse" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+              <a algin="right"> GEOSPATIAL BHUTAN |</a>
+              <span algin="left">Gives people the power to see their data</span>
+
+              </div>
+              
+            </div>
+
+ 
+            <div class="collapse navbar-collapse" id="the-navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{route('blog')}}">Blog</a></li>
+                <li><a href="{{route('blog.about')}}">About</a></li>
+                <li><a href="{{route('blog.contact')}}">Contact</a></li>
+                <li><a href="#">Applications</a></li>
+                <li onclick="return confirm('Click Ok If You Own This Blog')"></i><a href="{{ url('/login') }}">Login</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
 
 <div class="login-box">
             <div class="login-logo">
