@@ -83,7 +83,7 @@
                                 <ul class="tags">
 
                                @foreach($tags as $tag)
-                                    <li><a href="{{ route('tag', $tag->name) }}">{{ $tag->name}}</a></li>
+                                    <li><a href="{{ route('tag', $tag->name) }}">{{$tag->name}}</a></li>
 
                                 @endforeach
                                 </ul>

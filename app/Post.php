@@ -8,6 +8,8 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Category;
+use App\Tag;
+
 
 class Post extends Model
 {
@@ -165,48 +167,32 @@ class Post extends Model
             return $this->belongsToMany(Tag::class);
         }
 
+
+        public function createTags($str)
+        {
+            $tags = explode(",", $str);
+            $tagIds = [];
+    
+            foreach ($tags as $tag)
+            {
+                $newTag = Tag::firstOrCreate([
+                    'name' => ucwords(trim($tag))
+                ]);
+    
+                $tagIds[] = $newTag->id;
+            }
+    
+            $this->tags()->sync($tagIds);
+        }
+
         public function getTagsHtmlAttribute()
         {
-            $anchors =[];
-            
-            foreach($this->tags as $tag){
-                                            
-        $anchors[]= '<a href ="' . route('tag', $tag->name) .'">' . $tag ->name .'</a>';
-            
-            
+            $anchors = [];
+            foreach($this->tags as $tag) {
+                $anchors[] = '<a href="' . route('tag', $tag->name) . '">' . '</a>';
             }
-
-            return implode (",", $anchors);
+            return implode(", ", $anchors);
         }
-
-
-        public function createTags($tagString)
-
-        {
-            $tags = explode(",", $tagString);
-            $tagIds = [];
-
-        foreach ($tags as $tag)
-        {
-
-            $newTag = new Tag(); 
-            $newTag = Tag::firstOrcreate( ['name' => ucwords(trim($tag))]);
-            $newTag->save();
-
-            $tagIds[] = $newTag->id;
-
-        }
-
-        $this->tags()->detach();
-        $this->tags()->attach($tagIds);
-
-        }
-
-        public function getTagsListAttribute()
-            {
-
-            return $this->tags->pluck('name');
-            }
 
 
 }

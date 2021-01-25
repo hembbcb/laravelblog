@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use Intervention\Image\Facades\Image;
-
-use App\Http\Requests;
+use App\Tag;
 
 class BackendBController extends BackendController
 {

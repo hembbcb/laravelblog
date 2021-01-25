@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Post;
 use App\User;
-use Tag;
+use App\Tag;
 
 class BlogController extends Controller
 {
