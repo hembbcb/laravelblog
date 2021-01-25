@@ -23,6 +23,16 @@ class BlogController extends Controller
         return view("blog.index", compact('posts', 'categories'));
     }
 
+    public function about()
+    {
+        return view("blog.about.about");
+    }
+
+    public function contact()
+    {
+        return view("blog.contact.contact");
+    }
+
     public function category($id)
     {
         $categories = Category::with('posts')->orderBy('title', 'asc')->get();
