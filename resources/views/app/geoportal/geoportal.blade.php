@@ -14,7 +14,7 @@
                 </br>
                 This portal allows users to enhance the awareness about geospatial, and improve access to geospatial information and different applications.</p>
                 </br>
-                <p><strong> Website: </strong><a href="#">#</a></p>
+                <p><strong> Website: </strong><a href="https://drukgeoportal.herokuapp.com/">Druk Geoportal</a></p>
 
                 </div>
             </div>

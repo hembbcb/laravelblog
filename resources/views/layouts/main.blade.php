@@ -56,10 +56,8 @@
                 <div class="col-md-4">
                     <nav>
                         <ul class="social-icons">
-                            <li><a href="#" class="i fa fa-facebook"></a></li>
-                            <li><a href="#" class="i fa fa-twitter"></a></li>
-                            <li><a href="#" class="i fa fa-google-plus"></a></li>
-                            <li><a href="#" class="i fa fa-github"></a></li>
+                            <li><a href="https://www.facebook.com/geospatialbhutan" class="i fa fa-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/geospatial_bhutan/?hl=en" class="i fa fa-instagram"></a></li>
                         </ul>
                     </nav>
                 </div>

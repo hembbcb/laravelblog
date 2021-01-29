@@ -10,7 +10,7 @@
 
                 <p>The tourism information system serves as tourism information centres which offers well organised, customer friendly and high quality tourism information to both internal tourists and foreign visitors.</p>
                 
-                <p><strong> Website: </strong><a href="#">#</a></p>
+                <p><strong> Website: </strong><a href="">Druk Tourism Inofrmation System</a></p>
 
                 </div>
             </div>
