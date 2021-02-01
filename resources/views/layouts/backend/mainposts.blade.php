@@ -19,6 +19,7 @@
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css">
                 <link rel="stylesheet" href="/backend/plugins/tag-editor/jquery.tageditor.css">
+                <script data-ad-client="ca-pub-3442421217133965" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             </head>
 
 <body class="hold-transition skin-blue sidebar-mini">

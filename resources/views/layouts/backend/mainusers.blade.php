@@ -18,6 +18,7 @@
                 <link rel="stylesheet" href="/backend/css/skins/_all-skins.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.css">
                 <link rel="stylesheet" href="/backend/plugins/datetimepicker/stylesheets/bootstrap-datetimepicker.css">
+                <script data-ad-client="ca-pub-3442421217133965" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
             </head>
 
