@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <script data-ad-client="ca-pub-3442421217133965" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+          <script async defer type="text/javascript" src="https://sdk.audienceplay.com/audienceplay.js"></script>
+          <script type='text/javascript'>
+          window.onload = function(e)
+          {
+          audiencePlay.set("acp15ghuzwzpkkxsi5md");
+          audiencePlay.start("Users");
+          audiencePlay.end();
+          audiencePlay.send();
+          }
+          </script>
 </head>
 
 <header>
